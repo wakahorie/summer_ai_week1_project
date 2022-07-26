@@ -17,10 +17,33 @@ class SocialNetwork:
         # hint: load a the json file from disk and look up how to recreate the list of people objects.
         pass
 
-    def  create_account(self):
+    def create_account(self):
         #implement function that creates account here
-        print("Creating ...")
-        pass
+        username = input("please type in your username: ")
+        age = input("please type in age")
+
+        user = Person(username , age)
+        self.list_of_people.append(user)
+
+
+        #for loop to check name in list_of_people
+        #if username != self.list_of_people:
+            #self.list_of_people.append(username)
+        #     age = input("please type in age")
+        #     #do not know if this is correct #
+            
+        #     self.list_of_age.append(age)
+        #     print("Creating ...")
+        #     print("account created")
+            
+        # else:
+        #     print("username already used")
+        #     print("please try again")
+        
+        #how to ask for the username again
+        
+        #implement function that creates account here
+        # pass
 
 
 class Person:
